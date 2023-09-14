@@ -1,6 +1,4 @@
 
-|
-Lsrc/main/java/segmentify/configuration/kafka/KafkaProducerConfiguration.java,4/b/4b0f651d2d84397a87705848c8cfc23f325c12be
 v
 Fsrc/main/java/segmentify/configuration/proporties/KafkaProperties.java,c/d/cd2d7fcdbd3d433fb85827a4dd4f69117f031114
 e
@@ -19,11 +17,7 @@ i
 9src/main/java/segmentify/constants/EventResponseType.java,c/a/cabdd027ed226436aee74f50b8a1fe0ee9a18297
 n
 >src/main/java/segmentify/annotation/EventRequestValidator.java,1/7/1799cc192971b55728a1b95cf493e4ab5bd1a39c
-Y
-)src/main/java/segmentify/Application.java,d/1/d1aaf171908ddd866b879eeab20945c7622653bb
 ]
 -src/main/java/segmentify/advice/MyAdvice.java,b/5/b5da52be49f5339ca295fe29c6502fed1965e4fb
-t
-Dsrc/main/java/segmentify/configuration/async/AsyncConfiguration.java,8/e/8eb8db30e11e3a7d515a27a6e087cbae8d0f5ce5
 Z
 *src/main/java/segmentify/dto/EventDto.java,3/e/3e5a37b8cde77321a4eff6b33bf7ee5902acb098

@@ -15,4 +15,5 @@ import java.util.List;
 public class EventRequest {
 
     private List<EventDto> eventList;
+    private String apiKey;
 }

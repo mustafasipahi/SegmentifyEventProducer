@@ -21,6 +21,7 @@ public class EventController {
     public EventResponse acceptEvent(@RequestBody @Valid EventRequest eventRequest, @RequestParam String apiKey) {
         log.info("eventRequest : {}", eventRequest.toString());
         log.info("apiKey : {}", apiKey);
+        eventRequest.setApiKey(apiKey);
         return eventService.acceptEvent(eventRequest);
     }
 }
