@@ -9,8 +9,6 @@ e
 -src/main/java/segmentify/utils/DateUtils.java,4/8/4814ee87d46fbddac6e68df6a2c529a19ce3a8ba
 q
 Asrc/main/java/segmentify/advice/exception/MyRuntimeException.java,8/6/8604f956c165e1279f6cdce93ff74c618e9b8443
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 m
 =src/main/java/segmentify/annotation/ValidateEventRequest.java,f/8/f81a2d04b10f9ab465d1aaa0c995c3dc9f992825
 t
