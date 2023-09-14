@@ -1,0 +1,7 @@
+server:
+  port: 8080
+
+kafka:
+  topic:
+    test: event
+  address: localhost:9092
