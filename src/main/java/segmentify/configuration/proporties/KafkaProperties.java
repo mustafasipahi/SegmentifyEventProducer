@@ -17,6 +17,8 @@ public class KafkaProperties {
     @Getter
     @Setter
     public static class Topic {
-        private String test;
+
+        private String productView;
+        private String pageView;
     }
 }

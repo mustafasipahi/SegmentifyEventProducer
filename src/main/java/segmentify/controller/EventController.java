@@ -5,12 +5,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import segmentify.annotation.ValidateEventRequest;
-import segmentify.dto.EventDto;
 import segmentify.response.EventResponse;
 import segmentify.service.EventService;
 
 import javax.validation.Valid;
-import java.util.List;
+import java.util.Set;
 
 @Validated
 @RestController
@@ -25,7 +24,7 @@ public class EventController {
     public EventResponse acceptEvent(
             @RequestBody
             @ValidateEventRequest
-            List<@Valid EventDto> eventList, @RequestParam String apiKey) {
+            Set<@Valid Object> eventList, @RequestParam String apiKey) {
         log.info("eventList : {}", eventList);
         log.info("apiKey : {}", apiKey);
         return eventService.acceptEvent(eventList, apiKey);

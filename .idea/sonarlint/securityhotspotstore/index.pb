@@ -1,16 +1,6 @@
 
-v
-Fsrc/main/java/segmentify/configuration/proporties/KafkaProperties.java,c/d/cd2d7fcdbd3d433fb85827a4dd4f69117f031114
 ]
 -src/main/java/segmentify/utils/DateUtils.java,4/8/4814ee87d46fbddac6e68df6a2c529a19ce3a8ba
-q
-Asrc/main/java/segmentify/advice/exception/MyRuntimeException.java,8/6/8604f956c165e1279f6cdce93ff74c618e9b8443
-t
-Dsrc/main/java/segmentify/advice/exception/MyValidationException.java,4/e/4e663688488fbb473a5ca07095e6bdd4283e0930
-d
-4src/main/java/segmentify/response/EventResponse.java,5/c/5c4a81d065502301a7306de9a4fc35905d0f8869
-i
-9src/main/java/segmentify/constants/EventResponseType.java,c/a/cabdd027ed226436aee74f50b8a1fe0ee9a18297
 w
 Gsrc/main/java/segmentify/configuration/async/AsyncExceptionHandler.java,f/b/fba44d14157d42882db6744a3f065d43490966a2
 |
@@ -20,3 +10,22 @@ Dsrc/main/java/segmentify/configuration/async/AsyncConfiguration.java,8/e/8eb8d
 :
 
 Dockerfile,6/6/6651ddff6eb82c840ced7c1dddee15c6e1913dd4
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+Y
+)src/main/java/segmentify/Application.java,d/1/d1aaf171908ddd866b879eeab20945c7622653bb
+b
+2src/main/java/segmentify/constants/DeviceType.java,2/6/265104c54d27a78f5a3cb086979d6c180a710615
+]
+-src/main/java/segmentify/advice/MyAdvice.java,b/5/b5da52be49f5339ca295fe29c6502fed1965e4fb
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+`
+0src/main/java/segmentify/constants/Language.java,f/a/fa11ea37a82027ed5d94778930df45bcf07e71d1
+k
+;src/main/java/segmentify/constants/OperatingSystemType.java,9/b/9b482ee6d9090ed5daf61d93c2f56316f7892598
+c
+3src/main/java/segmentify/constants/BrowserType.java,7/4/74dd2a5f2ffe238519054343987ebd198de56c27
+^
+.src/main/java/segmentify/constants/Gender.java,2/f/2faf436c21d33f9b5acebeff428af8d147bdba76

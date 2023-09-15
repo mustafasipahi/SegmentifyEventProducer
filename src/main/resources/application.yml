@@ -3,5 +3,6 @@ server:
 
 kafka:
   topic:
-    test: event
+    productView: product_view_event
+    pageView: page_view_event
   address: ${SPRING_KAFKA_BOOTSTRAP_SERVERS:localhost:9092}

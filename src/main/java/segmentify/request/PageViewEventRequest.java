@@ -3,15 +3,15 @@ package segmentify.request;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-import segmentify.dto.EventDto;
-
-import java.util.List;
+import lombok.ToString;
+import segmentify.model.PageViewEvent;
 
 @Getter
 @Setter
+@ToString
 @Builder
-public class EventRequest {
+public class PageViewEventRequest {
 
-    private List<EventDto> eventList;
+    private PageViewEvent pageViewEvent;
     private String apiKey;
 }

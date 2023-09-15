@@ -4,24 +4,25 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.util.CollectionUtils;
 import segmentify.advice.exception.MyValidationException;
 import segmentify.constants.EventResponseType;
-import segmentify.dto.EventDto;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
-import java.util.List;
+import java.util.LinkedHashMap;
+import java.util.Set;
 
-public class EventRequestValidator implements ConstraintValidator<ValidateEventRequest, List<EventDto>> {
+public class EventRequestValidator implements ConstraintValidator<ValidateEventRequest, Set<Object>> {
 
     @Override
-    public boolean isValid(List<EventDto> eventList, ConstraintValidatorContext context) {
+    public boolean isValid(Set<Object> eventList, ConstraintValidatorContext context) {
         if (CollectionUtils.isEmpty(eventList)) {
             throw new MyValidationException(EventResponseType.NO_EVENT);
         }
         eventList.forEach(event -> {
-            if (StringUtils.isBlank(event.getUserId())) {
+            LinkedHashMap<String, String> eventMap = (LinkedHashMap) event;
+            if (StringUtils.isBlank(eventMap.get("userId"))) {
                 throw new MyValidationException(EventResponseType.NO_USERID);
             }
-            if (StringUtils.isBlank(event.getSessionId())) {
+            if (StringUtils.isBlank(eventMap.get("sessionId"))) {
                 throw new MyValidationException(EventResponseType.NO_SESSIONID);
             }
         });

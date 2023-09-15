@@ -6,7 +6,8 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import segmentify.configuration.proporties.KafkaProperties;
-import segmentify.request.EventRequest;
+import segmentify.request.PageViewEventRequest;
+import segmentify.request.ProductViewEventRequest;
 
 @Service
 @Slf4j
@@ -17,8 +18,20 @@ public class EventProducer {
     private final KafkaProperties kafkaProperties;
 
     @Async
-    public void sendEvent(EventRequest eventRequest) {
-        kafkaTemplate.send(kafkaProperties.getTopic().getTest(), eventRequest);
-        log.info("kafkaTemplate send to topic : {} request : {}", kafkaProperties.getTopic().getTest(), eventRequest.toString());
+    public void sendProductViewEvent(ProductViewEventRequest request) {
+        //kafkaTemplate.send(kafkaProperties.getTopic().getProductView(), request);
+        log.info("kafkaTemplate sendProductViewEvent to topic : {} request : {}",
+                kafkaProperties.getTopic().getProductView(),
+                request.toString()
+        );
+    }
+
+    @Async
+    public void sendPageViewEvent(PageViewEventRequest request) {
+        //kafkaTemplate.send(kafkaProperties.getTopic().getPageView(), request);
+        log.info("kafkaTemplate sendPageViewEvent to topic : {} request : {}",
+                kafkaProperties.getTopic().getPageView(),
+                request.toString()
+        );
     }
 }
