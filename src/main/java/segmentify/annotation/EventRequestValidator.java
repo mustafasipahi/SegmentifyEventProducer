@@ -5,17 +5,15 @@ import org.springframework.util.CollectionUtils;
 import segmentify.advice.exception.MyValidationException;
 import segmentify.constants.EventResponseType;
 import segmentify.dto.EventDto;
-import segmentify.request.EventRequest;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import java.util.List;
 
-public class EventRequestValidator implements ConstraintValidator<ValidateEventRequest, EventRequest> {
+public class EventRequestValidator implements ConstraintValidator<ValidateEventRequest, List<EventDto>> {
 
     @Override
-    public boolean isValid(EventRequest request, ConstraintValidatorContext context) {
-        List<EventDto> eventList = request.getEventList();
+    public boolean isValid(List<EventDto> eventList, ConstraintValidatorContext context) {
         if (CollectionUtils.isEmpty(eventList)) {
             throw new MyValidationException(EventResponseType.NO_EVENT);
         }
