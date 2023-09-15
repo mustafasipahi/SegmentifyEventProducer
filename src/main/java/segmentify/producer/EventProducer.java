@@ -19,7 +19,7 @@ public class EventProducer {
 
     @Async
     public void sendProductViewEvent(ProductViewEventRequest request) {
-        //kafkaTemplate.send(kafkaProperties.getTopic().getProductView(), request);
+        kafkaTemplate.send(kafkaProperties.getTopic().getProductView(), request);
         log.info("kafkaTemplate sendProductViewEvent to topic : {} request : {}",
                 kafkaProperties.getTopic().getProductView(),
                 request.toString()
@@ -28,7 +28,7 @@ public class EventProducer {
 
     @Async
     public void sendPageViewEvent(PageViewEventRequest request) {
-        //kafkaTemplate.send(kafkaProperties.getTopic().getPageView(), request);
+        kafkaTemplate.send(kafkaProperties.getTopic().getPageView(), request);
         log.info("kafkaTemplate sendPageViewEvent to topic : {} request : {}",
                 kafkaProperties.getTopic().getPageView(),
                 request.toString()
