@@ -4,4 +4,4 @@ server:
 kafka:
   topic:
     test: event
-  address: localhost:9092
+  address: ${SPRING_KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
