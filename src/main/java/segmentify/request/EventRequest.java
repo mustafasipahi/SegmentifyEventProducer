@@ -1,17 +1,15 @@
 package segmentify.request;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
-import segmentify.annotation.ValidateEventRequest;
 import segmentify.dto.EventDto;
 
 import java.util.List;
 
 @Getter
 @Setter
-@ToString
-@ValidateEventRequest
+@Builder
 public class EventRequest {
 
     private List<EventDto> eventList;
