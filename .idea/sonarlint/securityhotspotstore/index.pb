@@ -10,8 +10,6 @@ Dsrc/main/java/segmentify/configuration/async/AsyncConfiguration.java,8/e/8eb8d
 :
 
 Dockerfile,6/6/6651ddff6eb82c840ced7c1dddee15c6e1913dd4
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 Y
 )src/main/java/segmentify/Application.java,d/1/d1aaf171908ddd866b879eeab20945c7622653bb
 b

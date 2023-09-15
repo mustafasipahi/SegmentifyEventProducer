@@ -19,8 +19,8 @@ public class EventService {
     private final EventFactory eventFactory;
 
     @Transactional
-    public EventResponse acceptEvent(Set<Object> eventList, String apiKey) {
-        eventList.forEach(event -> {
+    public EventResponse acceptEvent(Set<Object> eventSet, String apiKey) {
+        eventSet.forEach(event -> {
             final EventNameType eventNameType = getEventNameType(event);
             final EventFactory strategy = eventFactory.getStrategy(eventNameType);
             strategy.execute(event, apiKey);

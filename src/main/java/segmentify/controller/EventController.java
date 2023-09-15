@@ -24,9 +24,9 @@ public class EventController {
     public EventResponse acceptEvent(
             @RequestBody
             @ValidateEventRequest
-            Set<@Valid Object> eventList, @RequestParam String apiKey) {
-        log.info("eventList : {}", eventList);
+            Set<@Valid Object> eventSet, @RequestParam String apiKey) {
+        log.info("eventSet : {}", eventSet);
         log.info("apiKey : {}", apiKey);
-        return eventService.acceptEvent(eventList, apiKey);
+        return eventService.acceptEvent(eventSet, apiKey);
     }
 }

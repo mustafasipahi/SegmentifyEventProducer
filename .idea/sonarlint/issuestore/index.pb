@@ -10,8 +10,6 @@ Lsrc/main/java/segmentify/configuration/kafka/KafkaProducerConfiguration.java,4
 Dockerfile,6/6/6651ddff6eb82c840ced7c1dddee15c6e1913dd4
 t
 Dsrc/main/java/segmentify/configuration/async/AsyncConfiguration.java,8/e/8eb8db30e11e3a7d515a27a6e087cbae8d0f5ce5
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 Y
 )src/main/java/segmentify/Application.java,d/1/d1aaf171908ddd866b879eeab20945c7622653bb
 b
